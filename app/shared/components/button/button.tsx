@@ -12,7 +12,7 @@ const Button = ({ children }:IButton):JSX.Element => {
             radius="sm"
             color="primary"
             type="button"
-            className="font-bold"
+            className="font-bold text-white"
             size="lg"
         >
             { children }

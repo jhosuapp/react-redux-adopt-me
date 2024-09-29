@@ -1,5 +1,5 @@
 import { Input, InputProps } from "@nextui-org/input";
-
+import styles from './textField.module.scss';
 
 interface ITextField extends InputProps, Omit<InputProps, "errorMessage"> {
     ClassNameWrapper?: string;
@@ -15,12 +15,11 @@ const TextField = ({ children, type, placeholder, label, isRequired, description
     return (
         <Input
             labelPlacement="outside"
+            radius="sm"
             variant="bordered"
-            errorMessage={""}
-            description={""}
             autoComplete="off"
             placeholder={ placeholder }
-            className="text-white"
+            className={`${styles.input}  text-primary`}
             classNames={{
                 errorMessage: "text-primary",
             }}
@@ -28,12 +27,12 @@ const TextField = ({ children, type, placeholder, label, isRequired, description
             type={ type }
             label={
                 <>
-                    <span className="font-semibold text-white text-sm">
+                    <span className="font-semibold text-primary text-sm">
                         {label}
                         {isRequired && "*"}
                     </span>
                     {description && (
-                        <span>{description}</span>
+                        <span className="text-primary">{description}</span>
                     )}
                 </>
               }

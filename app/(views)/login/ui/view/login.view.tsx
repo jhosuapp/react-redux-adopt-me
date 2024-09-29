@@ -21,7 +21,7 @@ const LoginView = ():JSX.Element => {
     return (
         <section className="container py-5">
             <form className="w-full max-w-[550px]">
-                <h1 className="text-title text-center font-bold mb-8 text-white">Iniciar sesión</h1>
+                <h1 className="text-title text-center font-bold mb-8 text-primary">Iniciar sesión</h1>
                 <fieldset className="w-full flex flex-col gap-6">
                     <Controller
                         name="identification_number"

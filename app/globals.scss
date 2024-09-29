@@ -3,15 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --background: #161616;
-  --foreground: #171717;
+  --background: #fff;
+  --foreground: #A8D5BA;
+  --nextui-foreground: #A8D5BA;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.group[data-focus="true"] .group-data-\[focus\=true\]\:border-default-foreground,
+.group[data-hover="true"] .group-data-\[hover\=true\]\:border-default-foreground{
+  border-color: #A8D5BA !important;
 }
 
 body {

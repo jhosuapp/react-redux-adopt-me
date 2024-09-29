@@ -5,7 +5,7 @@ export const Colors= {
       200: '',
       300: '',
       400: '',
-      DEFAULT: '#FFCC00',
+      DEFAULT: '#A8D5BA',
       600: '',
       700: '',
       800: '',
