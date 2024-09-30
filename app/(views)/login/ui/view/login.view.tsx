@@ -3,8 +3,13 @@
 import { Button, TextField } from "@/app/shared/components";
 import styles from './login.module.scss';
 import { Controller, useForm } from "react-hook-form";
+import { useGetSessionSelector } from '@/app/shared/redux/selectors/session.selector';
 
 const LoginView = ():JSX.Element => {
+
+    const { token } = useGetSessionSelector();
+
+    console.log(token);
 
     const {
         control,
