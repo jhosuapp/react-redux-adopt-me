@@ -1,4 +1,4 @@
-import { ListAnimalsView } from "@/app/(views)/auth/list-animals/ui/view/listAnimals.view";
+import { ListAnimalsView } from "@/app/(views)/auth/list-animals/ui/listAnimals.view";
 
 import type { Metadata } from "next";
 
